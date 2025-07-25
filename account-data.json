@@ -1,0 +1,24 @@
+{
+    "email": "mmajed@world-contact.de",
+    "business_type": "individual",
+    "first_name": "Mohamed",
+    "last_name": "Majed",
+    "birth_day": 18,
+    "birth_month": 8,
+    "birth_year": 1994,
+    "address_line1": "Musterstraße 123",
+    "city": "Berlin",
+    "postal_code": "10115",
+    "phone": "+49301234567",
+    "currency": "EUR",
+    "iban": "DE89370400440532013000",
+    "account_holder_name": "Mohamed Majed",
+    "country": "DE",
+    "business_profile": {
+        "mcc": "8299",
+        "product_description": "Professionelle Übersetzungsdienstleistungen für verschiedene Sprachen und Fachbereiche. Wir bieten hochqualitative schriftliche Übersetzungen, Dolmetscherdienste und Lokalisierung für Unternehmen und Privatpersonen.",
+        "url": "https://world-contact.de",
+        "support_email": "support@world-contact.de",
+        "support_phone": "+49301234567"
+    }
+}

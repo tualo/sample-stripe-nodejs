@@ -1,0 +1,58 @@
+extends layout
+
+block content
+  h1 Account Status
+  
+  .nav
+    a.button(href="/") 
+      | 🏠 Zurück zur Startseite
+  
+  if ready
+    .success-message
+      style.
+        .success-message {
+          background-color: #d4edda;
+          color: #155724;
+          padding: 15px;
+          border-radius: 5px;
+          margin: 20px 0;
+          border: 1px solid #c3e6cb;
+        }
+        .error-message {
+          background-color: #f8d7da;
+          color: #721c24;
+          padding: 15px;
+          border-radius: 5px;
+          margin: 20px 0;
+          border: 1px solid #f5c6cb;
+        }
+      h3 ✅ Account ist bereit!
+      p Der Account ist vollständig eingerichtet und bereit für Auszahlungen.
+  else
+    .error-message
+      style.
+        .success-message {
+          background-color: #d4edda;
+          color: #155724;
+          padding: 15px;
+          border-radius: 5px;
+          margin: 20px 0;
+          border: 1px solid #c3e6cb;
+        }
+        .error-message {
+          background-color: #f8d7da;
+          color: #721c24;
+          padding: 15px;
+          border-radius: 5px;
+          margin: 20px 0;
+          border: 1px solid #f5c6cb;
+        }
+      h3 ⚠️ Account noch nicht bereit
+      p Der Account ist noch nicht vollständig eingerichtet. Bitte schließen Sie den Onboarding-Prozess ab.
+      
+  if accountId
+    .account-info
+      h4 Account Details:
+      p 
+        strong Account ID: 
+        | #{accountId}

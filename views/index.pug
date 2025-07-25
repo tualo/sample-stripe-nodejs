@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  h1 Stripe Translator Account Management
+  
+  .nav
+    p Wählen Sie eine Aktion:
+    
+    a.button(href="/create-translator-account",target="_blank") 
+      | 📝 Translator Account erstellen
+    
+    br
+
+    a.button.button-secondary(href="/check-translator-account", target="_blank") 
+      | ✅ Account Status prüfen
+  
+  .info
+    h3 Informationen:
+    ul
+      li 
+        strong Create Account: 
+        | Erstellt einen neuen Stripe Express Account für Übersetzer
+      li 
+        strong Check Account: 
+        | Überprüft den Status eines bestehenden Accounts
